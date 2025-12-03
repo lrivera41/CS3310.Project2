@@ -3,7 +3,7 @@
 public class Program
 {
     private static int inversions;
-    private static readonly string RootDirectory = @"C:\Users\luismi\Documents\source\School\CS3310.Project2\CS3310.Project2\CS3310.Project2\CS3310.Project2";
+    private static readonly string RootDirectory = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "../../../"));
     public static void Main(string[] args)
     {
         inversions = 0;
