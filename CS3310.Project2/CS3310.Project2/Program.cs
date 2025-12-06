@@ -16,14 +16,15 @@ public class Program
         Console.WriteLine($"Sorted Array: {string.Join(", ", array)}");
         Console.WriteLine($"Inversions {inversions}{Environment.NewLine}");
 
+        // Test file
         array = ExtractFile("problem3.5test.txt");
         array = SortAndCount(array);
         Console.WriteLine($"Sorted Array: {string.Join(", ", array ?? [])}");
         Console.WriteLine($"Inversions {inversions}{Environment.NewLine}");
 
+        // Actual problem file
         array = ExtractFile("problem3.5.txt");
         array = SortAndCount(array);
-        //Console.WriteLine($"Array: {string.Join(", ", array ?? [])}");
         Console.WriteLine($"Inversions {inversions}{Environment.NewLine}");
     }
 
