@@ -20,12 +20,12 @@ public class Program
         array = ExtractFile("problem3.5test.txt");
         array = SortAndCount(array);
         Console.WriteLine($"Sorted Array: {string.Join(", ", array ?? [])}");
-        Console.WriteLine($"Inversions {inversions}{Environment.NewLine}");
+        Console.WriteLine($"Test Problem Inversions {inversions}{Environment.NewLine}");
 
         // Actual problem file
         array = ExtractFile("problem3.5.txt");
         array = SortAndCount(array);
-        Console.WriteLine($"Inversions {inversions}{Environment.NewLine}");
+        Console.WriteLine($"Problem 3.5 Inversions {inversions}{Environment.NewLine}");
     }
 
     private static int[] ExtractFile(string fileName)
